@@ -15,14 +15,14 @@
 
 # Usage
 
-1. 베이스라인 모델 및 제안된 모델 학습하기  
+### 베이스라인 모델 및 제안된 모델 학습하기  
     $ python baseline.py --path "저장할 모델 경로"  
     $ python proposal.py --path "저장할 모델 경로"  
 
-2-1. 저장된 모델 테스트하기(ROC-Curve, AUC, F1-score, Confusion Matrix)  
+### 저장된 모델 테스트하기(ROC-Curve, AUC, F1-score, Confusion Matrix)  
     $ python plot_f1_auc.py --name "Baseline or Proposal 중 보고 싶은 혼동행렬 선택" --figure_path "plot 결과를 저장할 경로"  
 
-2-2. 저장된 모델 테스트하기(Histogram, Kernel Density Estimation plot, Boxplot)  
+### 저장된 모델 테스트하기(Histogram, Kernel Density Estimation plot, Boxplot)  
     $ python plot_kde_box_tsne.py --figure_path  "plot 결과를 저장할 경로"  
 
 
