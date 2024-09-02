@@ -16,6 +16,7 @@
 - - - - - - - -
 ## Usage
 
+
 1. 베이스라인 모델 및 제안된 모델 학습하기  
     $ python baseline.py --path "저장할 모델 경로"  
     $ python proposal.py --path "저장할 모델 경로"  
