@@ -9,10 +9,10 @@ from sklearn.metrics import roc_curve, auc, f1_score, precision_score, recall_sc
 import random
 import seaborn as sns
 import argparse
-from model import *
+from proposed_model import *
 from baseline_model import *
 
-print(torch.cuda.is_available())
+print(f'GPU Available : {torch.cuda.is_available()}')
 # cuda 캐시 정리
 torch.cuda.empty_cache()
 
@@ -330,7 +330,7 @@ baseline_model.load_state_dict(torch.load('./model/baseline.pth'))
 
 # 제안한 학습 모델 초기화
 proposed_model = CVAE_rev(input_dim=input_dim, latent_dim=latent_dim, hidden_dim=hidden_dim, condition_dim=condition_dim, dropout_prob=dropout).to(device)
-proposed_model.load_state_dict(torch.load('./model/proposed.pth'))
+proposed_model.load_state_dict(torch.load('./model/proposal.pth'))
 
 # 손실 함수 및 옵티마이저
 optimizer_baseline = optim.Adam(baseline_model.parameters(), lr=1e-5)
