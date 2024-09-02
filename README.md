@@ -25,4 +25,5 @@
 ### 저장된 모델 테스트하기(Histogram, Kernel Density Estimation plot, Boxplot)  
     $ python plot_kde_box_tsne.py --figure_path  "plot 결과를 저장할 경로"  
 
-
+### 필요한 라이브러 패키지 설치
+    $ pip install -r requirement.txt
