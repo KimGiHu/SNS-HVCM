@@ -29,4 +29,4 @@
     $ pip install -r requirement.txt
 
 ### 모델 구조 비교 분석 
-    $ python summary.py>>'./model_summary.txt'
+    $ python summary.py>>'./model_summary.txt'  
