@@ -27,3 +27,6 @@
 
 ### 필요한 라이브러 패키지 설치
     $ pip install -r requirement.txt
+
+### 모델 구조 비교 분석 
+    $ python summary.py>>'./model_summary.txt'
